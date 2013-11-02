@@ -1,4 +1,5 @@
 package main;
+
 import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;

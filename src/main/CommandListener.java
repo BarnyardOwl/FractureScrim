@@ -21,7 +21,7 @@ public class CommandListener implements CommandExecutor {
 			String command = cmd.getName( );
 			@SuppressWarnings( "unused" )
 			Player player = ( Player ) sender;
-			if( command.equalsIgnoreCase( "COMMAND GOES HERE" ) ) {
+			if( command.equalsIgnoreCase( "COMMAND GOES HERE" ) ) { // Exemplar code
 
 			}
 		}
