@@ -18,7 +18,9 @@ public class Var {
 	public static Boolean disableBlockInteractions = false;
 	public static Integer countdownCount = null;
 	public static Timer countdownTimer = new Timer( );
-
+	
+	// Now we will take a short except from another person's code. 
+	//
 	// At this point, I'd like to take a moment to speak to you about the Adobe PSD format.
 	// PSD is not a good format. PSD is not even a bad format. Calling it such would be an
 	// insult to other bad formats, such as PCX or JPEG. No, PSD is an abysmal format. Having
