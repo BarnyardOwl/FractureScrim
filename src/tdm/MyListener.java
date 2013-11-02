@@ -6,12 +6,15 @@ import main.Var;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.LeavesDecayEvent;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.event.weather.ThunderChangeEvent;
+import org.bukkit.event.weather.WeatherChangeEvent;
 
 public class MyListener implements Listener {
 
@@ -26,6 +29,23 @@ public class MyListener implements Listener {
 	@EventHandler
 	public void onCreatureSpawn( CreatureSpawnEvent event ) {
 		event.setCancelled( true ); // Prevent any monsters from spawning
+	}
+
+	@EventHandler
+	public void onWeatherChange( WeatherChangeEvent event ) {
+		event.setCancelled( true ); // Don't let the weather change
+	}
+
+	@EventHandler
+	public void onThunderChange( ThunderChangeEvent event ) {
+		event.setCancelled( true ); // Don't let the weather change
+	}
+
+	@EventHandler
+	public void onLeafDecay( LeavesDecayEvent event ) {
+		if( Var.disableTreeDecay ) {
+			event.setCancelled( true );
+		}
 	}
 
 	@EventHandler

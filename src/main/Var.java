@@ -12,12 +12,18 @@ public class Var {
 	public enum GameType {
 		UNDECIDED, TDM // possible gametypes
 	}
+	
+	public enum Weather {
+		CLEAR, RAINING, THUNDER
+	}
 	public static Map<String, Team> teams = new HashMap<String, Team>( ); // Put each player to a team
 	public static GameType gameType = GameType.UNDECIDED;
 	public static GameState gameState = GameState.NOT_STARTED;
+	public static Weather weather = Weather.CLEAR;
 	public static Boolean disableBlockInteractions = false;
 	public static Integer countdownCount = null;
 	public static Timer countdownTimer = new Timer( );
+	public static Boolean disableTreeDecay = false;
 	
 	// Now we will take a short except from another person's code. 
 	//
