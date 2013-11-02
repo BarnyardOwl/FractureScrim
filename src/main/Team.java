@@ -3,9 +3,6 @@ package main;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 
-/**
- * Stores information for a player's team
- * */
 public class Team {
 
 	private String name;

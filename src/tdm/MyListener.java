@@ -22,7 +22,7 @@ public class MyListener implements Listener {
 
 	@EventHandler
 	public void onCreatureSpawn( CreatureSpawnEvent event ) {
-		event.setCancelled( true ); // Prevent any monsters from spawning
+		event.setCancelled( true );
 	}
 
 	@EventHandler
@@ -35,7 +35,7 @@ public class MyListener implements Listener {
 	@EventHandler
 	public void onPlayerInteract( PlayerInteractEvent event ) {
 		if( Var.disableBlockInteractions ) {
-			event.setCancelled( true ); // Stop all interacting if configured
+			event.setCancelled( true );
 		}
 	}
 }

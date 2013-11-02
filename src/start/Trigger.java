@@ -31,19 +31,19 @@ public class Trigger extends TimerTask {
 			if( seconds >= 0 ) {
 				Var.countdownCount = seconds;
 				Var.countdownTimer.scheduleAtFixedRate( new Trigger( ), 0, 1000 );
-			} else { // If the player enters in a negative number of seconds
+			}else{
 				player.sendMessage( ChatColor.RED + "Please enter a valid number of seconds." );
 			}
 		} else {
-			if( Var.gameState == GameState.ACTIVE ) // If the game is still running
+			if( Var.gameState == GameState.ACTIVE )
 				player.sendMessage( ChatColor.RED + "The game is currently active. It cannot be started." );
-			if( Var.gameState == GameState.FINISHED ) // If the game is completed
+			if( Var.gameState == GameState.FINISHED )
 				player.sendMessage( ChatColor.RED + "The game is finished. It cannot be started." );
 		}
 	}
 
 	public void run( ) {
-		Countdown.react( ); // Send chat messages, give players items, teleport to spawn, etc.
-		Countdown.update( ); // Change the count
+		Countdown.react( );
+		Countdown.update( );
 	}
 }
