@@ -1,0 +1,7 @@
+name: FractureScrim
+author: Barnyard_Owl
+main: main.Main
+version: 0.1
+description: >
+             Plugin created by Barnyard_Owl for Team Fracture for scrimmaging.
+commands:
