@@ -25,6 +25,7 @@ import main.Var;
  */
 public class Scoreboard {
 	public static Team createTeam( String name ) { // Example static method. This is NOT ACTUALLY FUNCTIONAL. Replace with your own.
+		Scoreboard sb = Bukkit.getScoreboardManager().getNewScoreboard
 		return Var.scoreboard.registerNewTeam( name ); // Side note, I just realized I named an enum team. MAKE SURE TO IMPORT THE RIGHT TEAM AS WELL! It's the bukkit.scoreboard.??? team! Dunt screw anything up. pls.
 	} // Second side note, renamed it to "team data". Enough side notes.
 }
