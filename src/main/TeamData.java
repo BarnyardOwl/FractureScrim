@@ -6,13 +6,13 @@ import org.bukkit.GameMode;
 /**
  * Stores information for a player's team
  * */
-public class Team {
+public class TeamData {
 
 	private String name;
 	private ChatColor color;
 	private GameMode gamemode;
 
-	public Team( String name, ChatColor color, GameMode gamemode ) {
+	public TeamData( String name, ChatColor color, GameMode gamemode ) {
 		this.name = name;
 		this.color = color;
 		this.gamemode = gamemode;

@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Timer;
 
+import org.bukkit.scoreboard.Scoreboard;
+
 public class Var {
 	public enum GameState {
 		NOT_STARTED, ACTIVE, FINISHED // possible gamestates
@@ -16,7 +18,8 @@ public class Var {
 	public enum Weather {
 		CLEAR, RAINING, THUNDER
 	}
-	public static Map<String, Team> teams = new HashMap<String, Team>( ); // Put each player to a team
+	public static Scoreboard scoreboard;
+	public static Map<String, TeamData> teams = new HashMap<String, TeamData>( ); // Put each player to a team
 	public static GameType gameType = GameType.UNDECIDED;
 	public static GameState gameState = GameState.NOT_STARTED;
 	public static Weather weather = Weather.CLEAR;

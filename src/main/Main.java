@@ -22,7 +22,7 @@ public class Main extends JavaPlugin {
 		new MyListener( this ); // Register events
 		Bukkit.getServer( ).setDefaultGameMode( GameMode.CREATIVE ); // Set joining observer's gamemode to creative
 		// getCommand("COMMAND GOES HERE").setExecutor(new CommandListener(this)); // Exemplar command
-
+		Var.scoreboard = Bukkit.getScoreboardManager( ).getNewScoreboard( );
 		List<World> worlds = Bukkit.getWorlds( );
 		World world = Bukkit.getWorld( worlds.get( 0 ).getName( ) );
 		if( Var.weather == Weather.CLEAR )
